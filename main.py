@@ -1,7 +1,10 @@
-from app import app
+from app import app, Config
 
 
 def main():
+    # if app.debug:
+    Config.mock_up()
+
     app.run(debug=True)
 
 
