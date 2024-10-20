@@ -15,5 +15,5 @@ class Departure(AutoincrementID, table=True):
     def mock_data() -> list["Departure"]:
         return [
             Departure(name=f"Напрям №{x}", desc="Тестовий набір даних")
-            for x in range(5)
+            for x in range(1, 5)
         ]

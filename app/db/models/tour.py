@@ -26,6 +26,6 @@ class Tour(AutoincrementID, table=True):
                 departure=departure,
                 price=Decimal(f"{random.random()*100}").quantize(Decimal("1.00")),
             )
-            for tour in range(5)
+            for tour in range(1, 5)
             for departure in departures
         ]
